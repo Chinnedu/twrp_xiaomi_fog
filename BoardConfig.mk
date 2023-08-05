@@ -48,10 +48,12 @@ TARGET_NO_BOOTLOADER := true
 
 # Build Hack
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# Magisk
 TW_TARGET__MAGISK_ZIP := $(DEVICE_PATH)/magisk/Magisk-v26.1.zip
 
 # DRM
