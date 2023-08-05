@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/fog/device.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Inherit some common pbrb stuff if exis.
+$(call inherit-product, vendor/pb/config/common.mk)
+
 # Product Specifics
 PRODUCT_NAME := twrp_fog
 PRODUCT_DEVICE := fog
